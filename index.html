@@ -10,6 +10,7 @@
       padding: 10px;
     }
   </style>
+  <script defer src="js/challenge.js"></script>
 </head>
 <body>
   <h1>
@@ -21,18 +22,20 @@
   <button id='minus' > ➖ </button>
   <button id='plus' > ➕ </button>
   <button id='heart' > ❤️ </button>
-  <button id='pause' > pause </button>
+  <button id='pause' > Reset </button>
 
   <ul class='likes'></ul>
 
   <div>
+    <h3>Likes</h3>
+    <div id='likes-list' class='comments'></div>
     <h3>Comments</h3>
     <div id='list' class='comments'></div>
 
     <h3>Leave a comment</h3>
 
     <form id="comment-form" action="">
-      <input type='text' name="comment" id="comment-input" cols="30" rows="10">
+      <input type='text' name="comment" id="comment-input" placeholder="type here" cols="30" rows="10">
       </br>
       <button id='submit'>submit</button>
     </form>
@@ -40,6 +43,5 @@
   </div>
 
   <!-- <script src="js/index.min.js"></script> -->
-  <script src="js/challenge.js"></script>
 </body>
 </html>
